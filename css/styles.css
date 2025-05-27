@@ -1,4 +1,5 @@
 /* Grid */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 .layout {
   /* Set your own grid   */
   display: grid;
@@ -9,7 +10,7 @@
 
 /* Widgets */
 section {
-  background: rgba(211, 211, 211, 0.5);
+  background: rgba(135, 200, 226, 0.5);
   padding: 1em;
   
   /* Relative Parent. Absolute Child */
@@ -18,6 +19,22 @@ section {
 
 /* Time */
 .time {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #478ab1;
+  /* Position time widget */
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  
+  /* Add some padding */
+  padding: 1em;
+  
+  /* Add a border */
+  border-radius: 10px;
+  
+  /* Add a shadow */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .hours {
@@ -35,7 +52,22 @@ section {
 
 /* Date */
 .date {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #478ab1;
+  /* Position time widget */
+  grid-column: 1 / -1;
+  grid-row: 3 / 3;
   
+  /* Add some padding */
+  padding: 1em;
+  
+  /* Add a border */
+  border-radius: 10px;
+  
+  /* Add a shadow */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .month {
@@ -52,7 +84,22 @@ section {
 
 /* Weather */
 .weather {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #333;
+  /* Position time widget */
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
   
+  /* Add some padding */
+  padding: 1em;
+  
+  /* Add a border */
+  border-radius: 10px;
+  
+  /* Add a shadow */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .city {
@@ -76,7 +123,7 @@ video {
     left: 0;
     /* Stretch to fill viewport */
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     /* stack behind content     */
     z-index: -1;
     /* fill background with video    */
